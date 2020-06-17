@@ -13,11 +13,11 @@ int main()
 
 	printf("The output should be: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16\r\n");
 
-	unsigned char b[16];
+	unsigned char b[16] = { 0 };
 
 	for (int codelen = 1; codelen <= 16; codelen++)
 		b[codelen - 1] = a[codelen];
-	/*
+	/* Not Repro
 	for (int codelen = 0; codelen < 16; codelen++)
 		b[codelen] = a[codelen + 1];
 	*/
