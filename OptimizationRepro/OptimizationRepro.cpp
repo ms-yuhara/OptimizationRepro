@@ -15,6 +15,9 @@ int main()
 
 	unsigned char b[16] = { 0 };
 
+	/* Workaround
+    #pragma loop(no_vector)
+	*/
 	for (int codelen = 1; codelen <= 16; codelen++)
 		b[codelen - 1] = a[codelen];
 	/* Not Repro
